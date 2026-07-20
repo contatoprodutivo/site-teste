@@ -8,6 +8,17 @@ Aplicação PHP/MySQL para testar o fluxo completo de um formulário publicado e
 2. Copie `config.example.php` como `config.php` na VPS.
 3. Preencha em `config.php` o banco, usuário e senha.
 4. Envie os arquivos para a pasta pública do domínio ou subdomínio.
-5. Garanta PHP 8.1+ com as extensões `pdo_mysql` e `mbstring`.
+5. Garanta PHP 8.1+ com a extensão `pdo_mysql`.
+
+## Teste de conexão
+
+Depois de criar `config.php`, abra `teste_conexao.php` pelo navegador. O resultado esperado é:
+
+```text
+CONEXÃO COM O BANCO: OK
+TABELA inscricoes_curso: OK
+```
+
+Apague `teste_conexao.php` da VPS após concluir o diagnóstico.
 
 `config.php` está no `.gitignore` e nunca deve ser enviado ao GitHub.
