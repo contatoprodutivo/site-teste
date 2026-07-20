@@ -81,7 +81,7 @@ try {
     );
 
     $statement = $pdo->prepare(
-        'INSERT INTO inscricoes_curso (nome, cpf, email, telefone, empresa, consentimento)\n'
+        'INSERT INTO inscricoes_curso (nome, cpf, email, telefone, empresa, consentimento) '
         . 'VALUES (:nome, :cpf, :email, :telefone, :empresa, 1)'
     );
     $statement->execute([
