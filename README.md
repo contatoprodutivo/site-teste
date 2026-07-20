@@ -22,3 +22,10 @@ TABELA inscricoes_curso: OK
 Apague `teste_conexao.php` da VPS após concluir o diagnóstico.
 
 `config.php` está no `.gitignore` e nunca deve ser enviado ao GitHub.
+
+## Importação em lote
+
+1. Defina `adminUser` e `adminPass` no `config.php` da VPS.
+2. Abra `importacao.php` e informe as credenciais administrativas.
+3. Baixe `modelo_inscricoes.csv`, preencha no Excel e salve como CSV UTF-8.
+4. Envie o arquivo e confira o resumo da importação.
