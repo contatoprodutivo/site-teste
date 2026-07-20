@@ -131,6 +131,7 @@ unset($_SESSION['import_result']);
         <button type="submit">Importar planilha</button>
       </form>
       <a class="back-link" href="index.php">Voltar ao formulário</a>
+      <a class="back-link admin-list-link" href="inscritos.php">Ver inscritos</a>
       <a class="back-link logout-link" href="importacao.php?sair=1">Sair</a>
     </section>
   </main>
