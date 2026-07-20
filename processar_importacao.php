@@ -29,11 +29,7 @@ function validCpf(string $cpf): bool
     return true;
 }
 
-$providedUser = (string) ($_SERVER['PHP_AUTH_USER'] ?? '');
-$providedPass = (string) ($_SERVER['PHP_AUTH_PW'] ?? '');
-if (!isset($adminUser, $adminPass)
-    || !hash_equals($adminUser, $providedUser)
-    || !hash_equals($adminPass, $providedPass)) {
+if (empty($_SESSION['import_authenticated'])) {
     stop(401, 'Acesso não autorizado.');
 }
 
