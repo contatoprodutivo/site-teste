@@ -7,3 +7,7 @@ $dbHost = 'localhost';
 $dbName = 'NOME_DO_BANCO';
 $dbUser = 'USUARIO_DO_BANCO';
 $dbPass = 'SENHA_DO_BANCO';
+
+// Acesso à área de importação. Defina valores fortes somente no config.php da VPS.
+$adminUser = 'administrador';
+$adminPass = 'TROQUE_POR_UMA_SENHA_FORTE';
