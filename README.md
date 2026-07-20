@@ -1,18 +1,13 @@
-# Site de teste
+# Inscrição — Curso de Power BI
 
-Projeto estático criado para demonstrar o fluxo:
+Aplicação PHP/MySQL para testar o fluxo completo de um formulário publicado em uma VPS Hostinger com Webuzo.
 
-1. desenvolvimento local;
-2. versionamento com Git;
-3. armazenamento no GitHub;
-4. publicação com GitHub Pages.
+## Instalação
 
-## Executar localmente
+1. Crie o banco e execute `database.sql` no phpMyAdmin.
+2. Copie `config.example.php` como `config.php` na VPS.
+3. Preencha em `config.php` o banco, usuário e senha.
+4. Envie os arquivos para a pasta pública do domínio ou subdomínio.
+5. Garanta PHP 8.1+ com as extensões `pdo_mysql` e `mbstring`.
 
-Abra `index.html` no navegador ou inicie um servidor local:
-
-```bash
-python3 -m http.server 8000
-```
-
-Depois acesse `http://localhost:8000`.
+`config.php` está no `.gitignore` e nunca deve ser enviado ao GitHub.
