@@ -29,3 +29,7 @@ Apague `teste_conexao.php` da VPS após concluir o diagnóstico.
 2. Abra `importacao.php` e informe as credenciais administrativas.
 3. Baixe `modelo_inscricoes.csv`, preencha no Excel e salve como CSV UTF-8.
 4. Envie o arquivo e confira o resumo da importação.
+
+## Consulta e edição
+
+Após entrar na área administrativa, abra `inscritos.php` para pesquisar, consultar e editar os dados cadastrados.
