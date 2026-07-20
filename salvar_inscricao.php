@@ -47,19 +47,19 @@ $telefone = preg_replace('/\D/', '', (string) ($_POST['telefone'] ?? '')) ?? '';
 $empresa = trim((string) ($_POST['empresa'] ?? ''));
 $consentimento = ($_POST['consentimento'] ?? '') === '1';
 
-if ($nome === '' || mb_strlen($nome) < 3 || mb_strlen($nome) > 150) {
+if ($nome === '' || strlen($nome) < 3 || strlen($nome) > 150) {
     respond(422, false, 'Informe um nome completo válido.');
 }
 if (!validCpf($cpf)) {
     respond(422, false, 'Informe um CPF válido.');
 }
-if (!filter_var($email, FILTER_VALIDATE_EMAIL) || mb_strlen($email) > 190) {
+if (!filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($email) > 190) {
     respond(422, false, 'Informe um e-mail válido.');
 }
 if (strlen($telefone) < 10 || strlen($telefone) > 11) {
     respond(422, false, 'Informe um telefone válido com DDD.');
 }
-if ($empresa === '' || mb_strlen($empresa) > 150) {
+if ($empresa === '' || strlen($empresa) > 150) {
     respond(422, false, 'Informe o nome da empresa.');
 }
 if (!$consentimento) {
